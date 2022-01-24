@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="css/animate-subheadings.css" type="text/css">
         <link rel="stylesheet" href="css/carousel.css" type="text/css">
         <link rel="stylesheet" href="css/about.css" type="text/css">
+        <link rel="stylesheet" href="css/blogcard.css">
+
 
 
         <!--Scripts Introduced by Meeti-->
@@ -360,6 +362,22 @@
         </div>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!-- BLOG CODE -->
+        <div class="mainbody">
+            <a class="anchor" href="{% url 'blogs:detail_blogs' post.slug %}"> 
+                <div class="heading">
+                    <div class="card">
+                        <img src="https://unsplash.com/photos/tyj895rVqDE" class="card__image" alt="brown couch" />
+                        <div class="card__content">
+                          <time datetime="2021-03-30" class="card__date">{{post.created_at}}</time>
+                          <span class="card__title">{{post.title}}<span>
+                        </div>
+                      </div>
+                </div>
+            </a>
+        </div>
 
         <!--Nav Bar Script for Sticky-->
         <script>
