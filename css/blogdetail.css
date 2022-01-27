@@ -10,10 +10,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 img{
-    width: 100%;
-    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 32% !important;
+    height: 40% !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .date {
     font-size: medium;
@@ -41,4 +48,59 @@ img{
     overflow-wrap: break-word;
     hyphens: manual;
     font-size: 1.58vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) { /* /320px — 480px */
+    img{
+        width: 63% !important;
+        margin-top: 6vw;       
+    }
+    .date{
+        font-size: 3vw;
+        align-items: center;
+    }
+    .h1 {
+        font-size: 7.2vw;
+    }
+    .description h4{
+        width: 90vw;
+        font-size: 3.5vw;
+    }
+
+}
+  
+@media screen and (min-width: 481px) and (max-width: 768px) {  /* 481px — 768px */ 
+    img{
+        width: 59% !important;
+        margin-top: 6vw;       
+    }
+    .date{
+        font-size: 3vw;
+        align-items: center;
+    }
+    .h1 {
+        font-size: 7.2vw;
+    }
+    .description h4{
+        width: 90vw;
+        font-size: 2.6vw;
+    }    
+}
+
+@media  screen and (min-width: 769px) and (max-width: 1200px) {  /* 769px — 1200px */
+    img{
+        width: 38% !important;
+        margin-top: 6vw;       
+    }
+    .date{
+        font-size: 1.7vw;
+        align-items: center;
+    }
+    .h1 {
+        font-size: 5.1vw;
+    }
+    .description h4{
+        width: 90vw;
+        font-size: 1.7vw;
+    }
 }
