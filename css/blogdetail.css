@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blogbody{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.date {
+    font-size: medium;
+    margin-left: 2vw !important;
+}
+.title{
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.h1{
+    font-size: 4vw;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.description h4{
+    inline-size: 90vw;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    font-size: 1.58vw;
+}
